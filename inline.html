@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration</title>
+  <style>
+  h1 {
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  }
+</style>
+</head>
+<body style="background-color: grey">
+  <h1 align="center">Registration Form</h1>
+  <form >
+    <table cellspacing="5" cellpadding="10">
+      <tr>
+        <td><label for="Name" style="color: blue; font-size: 25px;">FirstName</label></td>
+        <td><input type="text" placeholder="First name"></td>
+      </tr>
+      <tr>
+        <td><label for="name" style="color: blue; font-size: 25px;">LastName</label></td>
+        <td><input type="name" placeholder="Last name"></td>
+      </tr>
+      <tr>
+        <td><label for="gender" style="color: blue; font-size: 25px;">Gender</label></td>
+        <td>
+          <input type="radio" name="Gender">Male
+          <input type="radio" name="Gender">Female
+          <input type="radio" name="Gender">Other
+        </td>
+      </tr>
+      <tr>
+        <td><label for="dob" style="color: blue; font-size: 25px;">DOB</label></td>
+        <td><input type="date" id="birthday" name="birthday"></td>
+      </tr>
+      <tr>
+        <td><label for="email" style="color: blue; font-size: 25px;">Email</label></td>
+        <td><input type="email" placeholder="example@gmail.com"></td>
+      </tr>
+      <tr>
+        <td><label for="phone" style="color: blue; font-size: 25px;">Phone</label></td>
+        <td><input type="tel" id="phone" name="phone" pattern="[0-9]{2}-[0-9]{10}" placeholder="+91xxxxxxxxxx"></td>
+      </tr>
+      <tr>
+        <td><label for="address" style="color: blue; font-size: 25px;">Address</label></td>
+        <td><textarea rows="3" cols="40" name="text" placeholder="Enter Address Here"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="year" style="color: blue; font-size: 25px;">Year</td>
+          <td>
+            <select id="year">
+              <option>E1</option>
+              <option>E2</option>
+              <option>E3</option>
+              <option>E4</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label style="color: blue; font-size: 25px;">Select favorite subjects</label></td>
+          <td>
+            <input type="checkbox">WT
+            <input type="checkbox">DBMS
+            <input type="checkbox">COA
+            <input type="checkbox">FLAT
+          </td>
+        </tr>
+        <tr>
+          <td><label for="username" style="color: blue; font-size: 25px;">User Name</label></td>
+          <td><input type="text" placeholder="Username"></td>
+        </tr>
+        <tr>
+          <td><label for="password" style="color: blue; font-size: 25px;">Password</label></td>
+          <td><input type="password" placeholder="Password"></td>
+        </tr>
+        <tr>
+          <td><label style="color: blue; font-size: 25px;">Security Questions</label></td>
+          <td>
+            <select>
+              <option value="What is your 10th class hallticket number">What is your 10th class hallticket number</option>
+              <option value="What is your pet name">What is your pet name</option>
+              <option value="Who is your best friend" selected>Who is your best friend</option>
+              <option value="What is your hobby">What is your hobby</option>
+              <option value="What is your native">What is your native</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label style="color: blue; font-size: 25px;">Answers</label></td>
+          <td>
+            <select>
+              <option>10-02-2002</option>
+              <option>Wt teacher</option>
+            </select>
+          </td>
+          <tr>
+            <td><label style="color: blue; font-size: 25px;">Upload your picture</label></td>
+            <td><input type="file" name="fileToUpload" ></td>
+          </tr>
+          <tr align="center">
+            <b><td><input type="submit" value="Register"></td></b>
+            <td><input type="reset" value="Reset"></td><b>
+          </tr>
+     </table>
+  </body>
+</html>
